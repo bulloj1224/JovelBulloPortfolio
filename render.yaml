@@ -1,0 +1,11 @@
+services:
+  - type: web_service
+    name: jovelbullo-portfolio
+    env: node
+    plan: free
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false

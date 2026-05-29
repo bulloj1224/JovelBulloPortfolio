@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT ME - JOVELBULLO_PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- INLINE HOVER DROPDOWN STYLES -->
+    <style>
+        /* Setup the parent menu container to anchor the hidden dropdown */
+        .menu ul li.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* DEFAULT STATE: Completely invisible and hidden from layout */
+        .menu ul li.dropdown .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #000000;
+            border: 1px solid #d8891c;
+            border-radius: 4px;
+            padding: 8px 0;
+            min-width: 150px;
+            list-style: none;
+            margin: 0;
+            z-index: 9999;
+        }
+
+        /* HOVER TRIGGER: Visible ONLY when cursor is pointing at MY SERVICES */
+        .menu ul li.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Style adjustments for dropdown elements */
+        .menu ul li.dropdown .dropdown-menu li {
+            margin: 0 !important;
+            padding: 0 !important;
+            display: block;
+            width: 100%;
+        }
+
+        /* Style adjustments for the hyperlink text */
+        .menu ul li.dropdown .dropdown-menu li a {
+            display: block;
+            padding: 10px 15px;
+            color: #ffffff !important;
+            font-size: 14px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            transition: background 0.2s ease;
+        }
+
+        /* Hover response inside the dropdown window */
+        .menu ul li.dropdown .dropdown-menu li a:hover {
+            background: #d8891c;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="main about">
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        
+        <!-- CLICKABLE LOGO -->
+        <a href="https://drive.google.com/drive/folders/12z9hNhew5Omf7wahR1A96B5mD6oDd0lY" 
+           target="_blank" 
+           class="logo-link">
+
+            <div class="logo-box">
+                <h2 class="logo">JOVEL BULLO</h2>
+                <p class="subtitle">Virtual Executive Assistant</p>
+            </div>
+
+        </a>
+
+        <!-- MENU SECTION WITH DROPDOWN TRIGGER -->
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="active" href="about.html">ABOUT ME</a></li>
+                
+                <!-- DROPDOWN COMPONENT -->
+                <li class="dropdown">
+                    <a href="services.html">MY SERVICES</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="values.html">MY VALUES</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="works.html">MY WORKS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- ABOUT CONTENT -->
+    <div class="about-container">
+
+        <!-- IMAGE -->
+        <div class="about-image">
+            <div class="about-photo">
+                <img src="4.png" alt="Profile Image">
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="about-content">
+
+            <h1>ABOUT ME</h1>
+
+            <!-- SCROLLABLE BOX -->
+            <div class="about-scroll">
+                <p>
+                    Hello! I’m <span>Jovel Osabel Bullo</span>, a detail-oriented Executive Assistant passionate about helping executives, founders and coaches stay productive and efficient.
+                </p>
+                <p>
+                    I streamline daily operations, manage communication, and create systems that help businesses run smoothly.
+                </p>
+                <p>
+                    I specialize in administrative support, email management, calendar scheduling, task coordination, and communication support. I help clients focus on growing their business while I handle daily operations smoothly.
+                </p>
+                <p>
+                    I value professionalism, confidentiality, strong communication, and time management in every task I handle.
+                </p>
+                <p>
+                    My goal is to deliver reliable and high-quality virtual assistance that builds long-term professional trust.
+                </p>
+            </div>
+
+            <!-- SKILLS -->
+            <div class="skills-section">
+                <h2>MY SKILLS</h2>
+                <div class="skills">
+                    <div class="skill-box">Email Management</div>
+                    <div class="skill-box">Calendar Management</div>
+                    <div class="skill-box">Administrative Support</div>
+                    <div class="skill-box">Project Tracking</div>
+                    <div class="skill-box">Organization</div>
+                    <div class="skill-box">Time Management</div>
+                    <div class="skill-box">Data Management</div>
+                    <div class="skill-box">Graphic Design</div>
+                </div>
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="about-buttons">
+                <a href="https://drive.google.com/drive/folders/1lDr1TN4I9280TEBCIbD77K3NfsI__k-X" target="_blank">MY RESUME</a>
+                <a href="https://drive.google.com/drive/folders/1Bt87hMTDhy6rzZJkM-WuwFsN9FTwTF6h" target="_blank">COVER LETTER</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

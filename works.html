@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WORKS - JOVELBULLO_PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Setup the parent menu container to anchor the hidden dropdown */
+        .menu ul li.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* DEFAULT STATE: Completely invisible and hidden from layout */
+        .menu ul li.dropdown .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #000000;
+            border: 1px solid #d8891c;
+            border-radius: 4px;
+            padding: 8px 0;
+            min-width: 150px;
+            list-style: none;
+            margin: 0;
+            z-index: 9999;
+        }
+
+        /* HOVER TRIGGER: Visible ONLY when cursor is pointing at MY SERVICES */
+        .menu ul li.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Style adjustments for dropdown elements */
+        .menu ul li.dropdown .dropdown-menu li {
+            margin: 0 !important;
+            padding: 0 !important;
+            display: block;
+            width: 100%;
+        }
+
+        /* Style adjustments for the hyperlink text */
+        .menu ul li.dropdown .dropdown-menu li a {
+            display: block;
+            padding: 10px 15px;
+            color: #ffffff !important;
+            font-size: 14px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            transition: background 0.2s ease;
+        }
+
+        /* Hover response inside the dropdown window */
+        .menu ul li.dropdown .dropdown-menu li a:hover {
+            background: #d8891c;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="main works">
+
+    <div class="navbar">
+
+        <a href="https://drive.google.com/drive/folders/12z9hNhew5Omf7wahR1A96B5mD6oDd0lY"
+           target="_blank"
+           class="logo-link">
+
+            <div class="logo-box">
+                <h2 class="logo">JOVEL BULLO</h2>
+                <p class="subtitle">Virtual Executive Assistant</p>
+            </div>
+
+        </a>
+
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT ME</a></li>
+                
+                <li class="dropdown">
+                    <a href="services.html">MY SERVICES</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="values.html">MY VALUES</a></li>
+                    </ul>
+                </li>
+                
+                <li><a class="active" href="works.html">MY WORKS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="top" class="services-container">
+
+        <h1>MY WORKS</h1>
+
+        <p class="services-intro">
+            Here are some of the projects, administrative tasks, and professional outputs
+            I have practiced as a Virtual Executive Assistant.
+            These works demonstrate my ability to stay organized, communicate professionally,
+            manage schedules, create digital materials, and provide reliable support to clients and businesses.
+        </p>
+
+        <div class="services-grid">
+
+            <a href="#work1" class="service-link">
+                <div class="service-box">
+                    <h3>Executive Inbox Automation & Email Management</h3>
+                    <p>
+                        Organized inboxes, responded to client inquiries,
+                        and maintained professional communication.
+                    </p>
+                </div>
+            </a>
+
+            <a href="#work2" class="service-link">
+                <div class="service-box">
+                    <h3>Executive Calendar Management</h3>
+                    <p>
+                        Managed appointments, meetings, reminders,
+                        and daily schedules efficiently.
+                    </p>
+                </div>
+            </a>
+
+            <a href="#work3" class="service-link">
+                <div class="service-box">
+                    <h3>Data Management</h3>
+                    <p>
+                        Performed accurate data organization, spreadsheet updates,
+                        and information management tasks.
+                    </p>
+                </div>
+            </a>
+
+            <a href="#work4" class="service-link">
+                <div class="service-box">
+                    <h3>Graphic Design</h3>
+                    <p>
+                        Created simple professional graphics, presentations,
+                        and visual content for clients.
+                    </p>
+                </div>
+            </a>
+
+            <a href="#work5" class="service-link">
+                <div class="service-box">
+                    <h3>Document Preparation & Presentation</h3>
+                    <p>
+                        Prepared reports, formatted documents,
+                        and organized professional files.
+                    </p>
+                </div>
+            </a>
+
+            <a href="#work6" class="service-link">
+                <div class="service-box">
+                    <h3>Meetings and Webinars incorporated with Weekly Schedule (ZOOM AND CALENDAR)</h3>
+                    <p>
+                        Managed meetings and webinars using Zoom and calendar tools,
+                        ensending smooth scheduling and organization.
+                    </p>
+                </div>
+            </a>
+            
+            <a href="#work7" class="service-link">
+                <div class="service-box">
+                    <h3>OTHER WORK DONE</h3>
+                    <p>
+                        Other works done from my experience as a 
+                        student, freelancer, and a service crew.
+                    </p>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div id="work1" class="work-section-title">
+    EXECUTIVE INBOX AUTOMATION & EMAIL MANAGEMENT
+    <a href="#top" class="up-button">⬆ UP</a>
+</div>
+<div class="work-divider"></div>
+<div class="work-description">
+    As your Executive Assistant, I can streamline your Gmail
+    inbox by implementing an automated, color-coded system that
+    prioritizes urgent and client emails. This ensures you never
+    miss high-priority messages while reducing inbox overload,
+    giving you more time to focus on strategic decisions instead
+    of email management.
+</div>
+<div class="work-page">
+    <img src="WORK/WORK_1.png" alt="Email Management Showcase">
+</div>
+
+<div id="work2" class="work-section-title">
+    EXECUTIVE CALENDAR MANAGEMENT
+    <a href="#top" class="up-button">⬆ UP</a>
+</div>
+<div class="work-divider"></div>
+<div class="work-description">
+    I organized executive calendars, scheduled meetings,
+    managed reminders, and ensured smooth coordination of
+    appointments to improve time management and productivity.
+</div>
+<div class="work-page">
+    <img src="WORK/WORK_2A.png" alt="Calendar Scheduling Sample A">
+</div>
+<div class="work-page">
+    <img src="WORK/WORK_2B.png" alt="Calendar Scheduling Sample B">
+</div>
+
+<div id="work3" class="work-section-title">
+    DATA MANAGEMENT
+    <a href="#top" class="up-button">⬆ UP</a>
+</div>
+<div class="work-divider"></div>
+<div class="work-description">
+    This work demonstrates my ability to organize, update,
+    and maintain accurate data using spreadsheets and digital
+    management tools while ensuring efficiency and accuracy.
+</div>
+<div class="work-page">
+    <img src="WORK/WORK_3.png" alt="Data Sheet Entry Showcase">
+</div>
+
+<div id="work4" class="work-section-title">
+    GRAPHIC DESIGN
+    <a href="#top" class="up-button">⬆ UP</a>
+</div>
+<div class="work-divider"></div>
+<div class="work-description">
+    I created professional visual materials including graphics,
+    presentations, and digital content that support branding,
+    communication, and client engagement.
+</div>
+<div class="work-page">
+    <img src="WORK/WORK_4.png" alt="Graphic Design Assets Showcase">
+</div>
+
+<div id="work5" class="work-section-title">
+    DOCUMENT PREPARATION & PRESENTATION
+    <a href="#top" class="up-button">⬆ UP</a>
+</div>
+<div class="work-divider"></div>
+<div class="work-description">
+    I prepared organized reports, formatted business documents,
+    and created professional presentations to ensure clear and
+    effective communication.
+</div>
+<div class="work-page"><img src="WORK/WORK_5A.jpg" alt="Slide 1"></div>
+<div class="work-page"><img src="WORK/WORK_5B.jpg" alt="Slide 2"></div>
+<div class="work-page"><img src="WORK/WORK_5C.jpg" alt="Slide 3"></div>
+<div class="work-page"><img src="WORK/WORK_5D.jpg" alt="Slide 4"></div>
+<div class="work-page"><img src="WORK/WORK_5E.jpg" alt="Slide 5"></div>
+<div class="work-page"><img src="WORK/WORK_5F.jpg" alt="Slide 6"></div>
+<div class="work-page"><img src="WORK/WORK_5G.jpg" alt="Slide 7"></div>
+
+<div id="work6" class="work-section-title">
+    MEETINGS AND WEBINARS
+    <a href="#top" class="up-button">⬆ UP</a>
+</div>
+<div class="work-divider"></div>
+<div class="work-description">
+    I managed meetings and webinars using Zoom and calendar
+    tools by organizing schedules, sending reminders,
+    and ensuring smooth virtual coordination.
+</div>
+<div class="work-page">
+    <img src="WORK/WORK_6.png" alt="Zoom Coordination Layout">
+</div>
+
+<div id="work7" class="work-section-title">
+    OTHER WORK DONE
+    <a href="#top" class="up-button">⬆ UP</a>
+</div>
+<div class="work-divider"></div>
+<div class="work-description">
+    These additional works showcase my experience as a student,
+    freelancer, and service crew member, highlighting adaptability,
+    responsibility, teamwork, and communication skills.
+</div>
+
+<div class="work-page">
+    <div class="work-description">
+        Booking of domestic flights for my relatives and organizing
+        the schedule through calendar management with automated
+        email sending for reminders and updates.
+    </div>
+    <img src="WORK/WORK_7.png" alt="Flight Booking Organization">
+</div>
+
+<div class="work-page">
+    <img src="WORK/WORK_8.png" alt="Additional Assignment Resource">
+</div>
+
+<div class="work-page">
+    <div class="work-description">
+        Making of a university project: DARK SENSOR —
+        lighting the LED automatically when the sensor
+        detects darkness.
+    </div>
+    <video controls preload="metadata">
+        <source src="WORK/VID1.mp4" type="video/mp4">
+        Your browser does not support the video tag or the file path is missing.
+    </video>
+</div>
+
+<div class="work-page">
+    <div class="work-description">
+        FM TRANSMITTER — transmitting sound detected
+        by the system into an FM radio receiver.
+    </div>
+    <video controls preload="metadata">
+        <source src="WORK/VID2.mp4" type="video/mp4">
+        Your browser does not support the video tag or the file path is missing.
+    </video>
+</div>
+
+<div class="work-page">
+    <div class="work-description">
+        WEBSITE CREATION FOR MY PORTFOLIO using HTML and CSS
+    </div>
+    <video controls preload="metadata">
+        <source src="WORK/VID3.mp4" type="video/mp4">
+        Your browser does not support the video tag or the file path is missing.
+    </video>
+</div>
+
+<div class="work-description" style="background: white; text-align: center; padding: 40px 20px; font-size: 22px; font-weight: bold; color: #d8891c; letter-spacing: 2px; margin-top: 60px;">
+    To God Be All The Glory
+</div>
+
+</body>
+</html>

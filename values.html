@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY VALUES - JOVELBULLO_PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- INLINE HOVER DROPDOWN STYLES -->
+    <style>
+        /* Setup the parent menu container to anchor the hidden dropdown */
+        .menu ul li.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* DEFAULT STATE: Completely invisible and hidden from layout */
+        .menu ul li.dropdown .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #000000;
+            border: 1px solid #d8891c;
+            border-radius: 4px;
+            padding: 8px 0;
+            min-width: 150px;
+            list-style: none;
+            margin: 0;
+            z-index: 9999;
+        }
+
+        /* HOVER TRIGGER: Visible ONLY when cursor is pointing at MY SERVICES */
+        .menu ul li.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Style adjustments for dropdown elements */
+        .menu ul li.dropdown .dropdown-menu li {
+            margin: 0 !important;
+            padding: 0 !important;
+            display: block;
+            width: 100%;
+        }
+
+        /* Style adjustments for the hyperlink text */
+        .menu ul li.dropdown .dropdown-menu li a {
+            display: block;
+            padding: 10px 15px;
+            color: #ffffff !important;
+            font-size: 14px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            transition: background 0.2s ease;
+        }
+
+        /* Hover response inside the dropdown window */
+        .menu ul li.dropdown .dropdown-menu li a:hover {
+            background: #d8891c;
+            color: #ffffff !important;
+        }
+
+        /* Page specific box adjustment to keep uneven content heights uniform */
+        .services-grid .service-box {
+            height: 100%;
+        }
+
+        /* Added Styling for Tools Image showcase container */
+        .tools-showcase {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid #d8891c;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .tools-showcase img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+
+        /* Orange variant style for secondary header subtitle context */
+        .orange-subtitle {
+            font-size: 24px;
+            color: #d8891c;
+            font-weight: bold;
+            margin-top: 60px;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- CONTAINER USES THE SERVICES THEME BACKGROUND IMAGE -->
+<div class="main services">
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+
+        <!-- CLICKABLE LOGO -->
+        <a href="https://drive.google.com/drive/folders/12z9hNhew5Omf7wahR1A96B5mD6oDd0lY"
+           target="_blank"
+           class="logo-link">
+
+            <div class="logo-box">
+                <h2 class="logo">JOVEL BULLO</h2>
+                <p class="subtitle">Virtual Executive Assistant</p>
+            </div>
+
+        </a>
+
+        <!-- MENU SECTION WITH ACTIVE DROPDOWN SYSTEM -->
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT ME</a></li>
+                
+                <!-- DROPDOWN COMPONENT (MARKED ACTIVE SINCE WE ARE IN ITS SUB-SECTION) -->
+                <li class="dropdown">
+                    <a class="active" href="services.html">MY SERVICES</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="values.html">MY VALUES</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="works.html">MY WORKS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- VALUES MAIN CONTENT CONTAINER -->
+    <div class="services-container">
+
+        <h1>MY VALUES</h1>
+        
+        <!-- GRID 3x1 STRUCTURE LAYOUT -->
+        <div class="services-grid" style="margin-bottom: 20px;">
+
+            <!-- CARD 1: PARTNERSHIP SUPPORT -->
+            <div class="service-box">
+                <h3>Partnership-type Executive Support</h3>
+                <p>
+                    I provide reliable and proactive executive support by managing your schedule, 
+                    handling communications, and keeping daily operations organized. I don’t just 
+                    complete tasks—I anticipate needs, solve problems early, and ensure everything 
+                    runs smoothly behind the scenes. I help reduce your workload, protect your focus 
+                    time, and simplify decision-making so you can concentrate on scaling your business.
+                </p>
+            </div>
+
+            <!-- CARD 2: COMMUNICATION STYLE -->
+            <div class="service-box">
+                <h3>Communication Style</h3>
+                <p>
+                    I communicate clearly, professionally, and with purpose. I provide proactive 
+                    updates, ask the right questions early, and ensure expectations are always aligned. 
+                    My goal is to make decision-making easy and fast by keeping everything organized, 
+                    transparent, and on track.
+                </p>
+            </div>
+
+            <!-- CARD 3: LONG-TERM FIT -->
+            <div class="service-box">
+                <h3>Why I am a Long-term Fit</h3>
+                <p>
+                    I take ownership of my work and consistently follow through on tasks with 
+                    reliability and attention to detail. I value stability and long-term collaboration, 
+                    allowing me to better understand your workflow, preferences, and priorities over time. 
+                    I adapt quickly to an executive’s working style, ensuring seamless support and a 
+                    smooth, productive partnership.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- ORANGE SECTION TEXT BELOW THE 3 CARDS -->
+        <p class="orange-subtitle">Tools I Used Confidently</p>
+
+        <!-- TOOLS IMAGE DISPLAY SECTION -->
+        <div class="tools-showcase">
+            <img src="work/TOOLS.png" alt="Tools I Used Confidently">
+        </div>
+
+    </div>
+
+</div>
+
+<!-- PORTFOLIO CLOSING STATEMENT -->
+<div class="work-description" style="background: white; text-align: center; padding: 40px 20px; font-size: 22px; font-weight: bold; color: #d8891c; letter-spacing: 2px;">
+    To God Be All The Glory
+</div>
+
+</body>
+</html>

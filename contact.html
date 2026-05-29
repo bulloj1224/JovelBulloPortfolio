@@ -1,0 +1,192 @@
+<!-- CONTACT PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <!-- FONT AWESOME FOR ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- YOUR STYLE SHEET -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- INLINE HOVER DROPDOWN STYLES -->
+    <style>
+        /* Setup the parent menu container to anchor the hidden dropdown */
+        .menu ul li.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* DEFAULT STATE: Completely invisible and hidden from layout */
+        .menu ul li.dropdown .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #000000;
+            border: 1px solid #d8891c;
+            border-radius: 4px;
+            padding: 8px 0;
+            min-width: 150px;
+            list-style: none;
+            margin: 0;
+            z-index: 9999;
+        }
+
+        /* HOVER TRIGGER: Visible ONLY when cursor is pointing at MY SERVICES */
+        .menu ul li.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Style adjustments for dropdown elements */
+        .menu ul li.dropdown .dropdown-menu li {
+            margin: 0 !important;
+            padding: 0 !important;
+            display: block;
+            width: 100%;
+        }
+
+        /* Style adjustments for the hyperlink text */
+        .menu ul li.dropdown .dropdown-menu li a {
+            display: block;
+            padding: 10px 15px;
+            color: #ffffff !important;
+            font-size: 14px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            transition: background 0.2s ease;
+        }
+
+        /* Hover response inside the dropdown window */
+        .menu ul li.dropdown .dropdown-menu li a:hover {
+            background: #d8891c;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main contact">
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+
+        <!-- CLICKABLE LOGO -->
+        <a href="https://drive.google.com/drive/folders/12z9hNhew5Omf7wahR1A96B5mD6oDd0lY"
+           target="_blank"
+           class="logo-link">
+
+            <div class="logo-box">
+                <h2 class="logo">JOVEL BULLO</h2>
+                <p class="subtitle">Virtual Executive Assistant</p>
+            </div>
+
+        </a>
+
+        <!-- MENU SECTION WITH DROPDOWN TRIGGER -->
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT ME</a></li>
+                
+                <!-- DROPDOWN COMPONENT -->
+                <li class="dropdown">
+                    <a href="services.html">MY SERVICES</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="values.html">MY VALUES</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="works.html">MY WORKS</a></li>
+                <li><a class="active" href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- CONTACT CONTENT -->
+    <div class="contact-container">
+
+        <h1>CONTACT ME</h1>
+
+        <p class="contact-intro">
+            Feel free to contact me for virtual assistance,
+            administrative support, scheduling, email management,
+            graphic design, and other professional services.
+        </p>
+
+        <!-- Structured Contact Grid with Icons -->
+        <div class="contact-box">
+
+            <!-- EMAIL CARD -->
+            <div class="contact-item">
+                <i class="fas fa-envelope contact-icon"></i>
+                <h3>Email</h3>
+                <p>
+                    <a href="mailto:jovel.bullo.va@gmail.com">jovel.bullo.va@gmail.com</a>
+                </p>
+            </div>
+
+            <!-- PHONE CARD -->
+            <div class="contact-item">
+                <i class="fas fa-phone-alt contact-icon"></i>
+                <h3>Phone Number</h3>
+                <p>
+                    <a href="tel:+639913674122">+63 991 367 4122</a>
+                </p>
+                <p style="margin-top: 5px;">
+                    <a href="tel:+639618700673">+63 961 870 0673</a>
+                </p>
+            </div>
+
+            <!-- FACEBOOK CARD -->
+            <div class="contact-item">
+                <i class="fab fa-facebook-f contact-icon"></i>
+                <h3>Facebook</h3>
+                <p>
+                    <a href="https://www.facebook.com/jayosabel2004/" target="_blank" rel="noopener noreferrer">
+                        jay osabel
+                    </a>
+                </p>
+            </div>
+
+            <!-- LOCATION CARD -->
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt contact-icon"></i>
+                <h3>Location</h3>
+                <p>Butuan City, Philippines</p>
+            </div>
+
+        </div>
+
+        <!-- CONTACT BUTTONS -->
+        <div class="contact-buttons">
+
+            <a href="mailto:jovel.bullo.va@gmail.com">
+                SEND EMAIL
+            </a>
+
+            <a href="https://www.linkedin.com/in/jovelbullova/" target="_blank" rel="noopener noreferrer">
+                LINKEDIN
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- NEW CLOSING NOTE -->
+        <div class="closing-note" style="margin-top: 45px; font-size: 20px; line-height: 1.8; color: #141212; max-width: 700px; text-align: center; margin-left: auto; margin-right: auto;">
+            <p>Thank you for viewing my portfolio! I’d love to work with you.</p>
+            <p>I’m ready to support a <span style="color: #d8891c; font-weight: bold;">Founder</span> or <span style="color: #d8891c; font-weight: bold;">Executive</span> as a trusted executive assistant.</p>
+        </div>
+<!-- PORTFOLIO CLOSING STATEMENT -->
+<div class="work-description" style="background: white; text-align: center; padding: 40px 20px; font-size: 22px; font-weight: bold; color: #d8891c; letter-spacing: 2px;">
+    To God Be All The Glory
+</div>
+
+</body>
+</html>

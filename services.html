@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY SERVICES - JOVEL BULLO PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- INLINE HOVER DROPDOWN STYLES -->
+    <style>
+        /* Setup the parent menu container to anchor the hidden dropdown */
+        .menu ul li.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* DEFAULT STATE: Completely invisible and hidden from layout */
+        .menu ul li.dropdown .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #000000;
+            border: 1px solid #d8891c;
+            border-radius: 4px;
+            padding: 8px 0;
+            min-width: 150px;
+            list-style: none;
+            margin: 0;
+            z-index: 9999;
+        }
+
+        /* HOVER TRIGGER: Visible ONLY when cursor is pointing at MY SERVICES */
+        .menu ul li.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Style adjustments for dropdown elements */
+        .menu ul li.dropdown .dropdown-menu li {
+            margin: 0 !important;
+            padding: 0 !important;
+            display: block;
+            width: 100%;
+        }
+
+        /* Style adjustments for the hyperlink text */
+        .menu ul li.dropdown .dropdown-menu li a {
+            display: block;
+            padding: 10px 15px;
+            color: #ffffff !important;
+            font-size: 14px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            transition: background 0.2s ease;
+        }
+
+        /* Hover response inside the dropdown window */
+        .menu ul li.dropdown .dropdown-menu li a:hover {
+            background: #d8891c;
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="main services">
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+
+        <!-- CLICKABLE LOGO -->
+        <a href="https://drive.google.com/drive/folders/12z9hNhew5Omf7wahR1A96B5mD6oDd0lY" 
+           target="_blank" 
+           class="logo-link">
+
+            <div class="logo-box">
+                <h2 class="logo">JOVEL BULLO</h2>
+                <p class="subtitle">Virtual Executive Assistant</p>
+            </div>
+
+        </a>
+
+        <!-- MENU SECTION WITH DROPDOWN TRIGGER -->
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT ME</a></li>
+                
+                <!-- DROPDOWN COMPONENT -->
+                <li class="dropdown">
+                    <a class="active" href="services.html">MY SERVICES</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="values.html">MY VALUES</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="works.html">MY WORKS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- SERVICES CONTENT -->
+    <div class="services-container">
+
+        <h1>MY SERVICES</h1>
+
+        <p class="services-intro">
+            I provide professional virtual executive assistance to help you stay organized,
+            productive, and focused on your business growth.
+        </p>
+
+        <div class="services-grid">
+
+            <div class="service-box">
+                <h3>Email Management</h3>
+                <p>Organizing inbox, responding to emails, and filtering important messages.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Calendar Management</h3>
+                <p>Scheduling meetings, appointments, and managing your daily agenda.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Administrative Support</h3>
+                <p>Handling documents, reports, and daily office tasks efficiently.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Data Entry</h3>
+                <p>Accurate encoding and organizing of data in spreadsheets and systems.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Research Assistance</h3>
+                <p>Gathering information and preparing organized reports.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Customer Support</h3>
+                <p>Responding to inquiries and maintaining professional communication.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- PORTFOLIO CLOSING STATEMENT -->
+<div class="work-description" style="background: white; text-align: center; padding: 40px 20px; font-size: 22px; font-weight: bold; color: #d8891c; letter-spacing: 2px;">
+    To God Be All The Glory
+</div>
+
+</body>
+</html>
+
+```
