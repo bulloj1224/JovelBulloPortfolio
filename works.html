@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WORKS - JOVELBULLO_PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .menu ul li.dropdown { position: relative; display: inline-block; }
+        .menu ul li.dropdown .dropdown-menu {
+            display: none; position: absolute; top: 100%; left: 50%;
+            transform: translateX(-50%); background: #000000;
+            border: 1px solid #d8891c; border-radius: 4px; padding: 8px 0;
+            min-width: 150px; list-style: none; margin: 0; z-index: 9999;
+        }
+        .menu ul li.dropdown:hover .dropdown-menu { display: block; }
+        .menu ul li.dropdown .dropdown-menu li { margin: 0 !important; padding: 0 !important; display: block; width: 100%; }
+        .menu ul li.dropdown .dropdown-menu li a {
+            display: block; padding: 10px 15px; color: #ffffff !important;
+            font-size: 14px; text-decoration: none; text-align: center;
+            font-weight: bold; transition: background 0.2s ease;
+        }
+        .menu ul li.dropdown .dropdown-menu li a:hover { background: #d8891c; color: #ffffff !important; }
+    </style>
+</head>
+
+<body>
+
+<div class="main works">
+    <div class="navbar">
+        <a href="https://drive.google.com/drive/folders/12z9hNhew5Omf7wahR1A96B5mD6oDd0lY" target="_blank" class="logo-link">
+            <div class="logo-box">
+                <h2 class="logo">JOVEL BULLO</h2>
+                <p class="subtitle">Virtual Executive Assistant</p>
+            </div>
+        </a>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT ME</a></li>
+                <li class="dropdown">
+                    <a href="services.html">MY SERVICES</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="values.html">MY VALUES</a></li>
+                    </ul>
+                </li>
+                <li><a class="active" href="works.html">MY WORKS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="top" class="services-container">
+        <h1>MY WORKS</h1>
+        <p class="services-intro">
+            Here are some of the projects, administrative tasks, and professional outputs
+            I have practiced as a Virtual Executive Assistant.
+        </p>
+        <div class="services-grid">
+            <a href="#work1" class="service-link"><div class="service-box"><h3>Executive Inbox Automation</h3></div></a>
+            <a href="#work2" class="service-link"><div class="service-box"><h3>Executive Calendar Management</h3></div></a>
+            <a href="#work3" class="service-link"><div class="service-box"><h3>Data Management</h3></div></a>
+            <a href="#work4" class="service-link"><div class="service-box"><h3>Graphic Design</h3></div></a>
+            <a href="#work5" class="service-link"><div class="service-box"><h3>Document Preparation</h3></div></a>
+            <a href="#work6" class="service-link"><div class="service-box"><h3>Meetings and Webinars</h3></div></a>
+            <a href="#work7" class="service-link"><div class="service-box"><h3>OTHER WORK DONE</h3></div></a>
+        </div>
+    </div>
+</div>
+
+<!-- WORK SECTIONS -->
+<div id="work1" class="work-section-title">EXECUTIVE INBOX AUTOMATION <a href="#top" class="up-button">⬆ UP</a></div>
+<div class="work-page"><img src="WORK_1.png" alt="Email Management"></div>
+
+<div id="work2" class="work-section-title">EXECUTIVE CALENDAR MANAGEMENT <a href="#top" class="up-button">⬆ UP</a></div>
+<div class="work-page"><img src="WORK_2A.png" alt="Calendar A"><img src="WORK_2B.png" alt="Calendar B"></div>
+
+<div id="work3" class="work-section-title">DATA MANAGEMENT <a href="#top" class="up-button">⬆ UP</a></div>
+<div class="work-page"><img src="WORK_3.png" alt="Data Sheet"></div>
+
+<div id="work4" class="work-section-title">GRAPHIC DESIGN <a href="#top" class="up-button">⬆ UP</a></div>
+<div class="work-page"><img src="WORK_4.png" alt="Graphic Design"></div>
+
+<div id="work5" class="work-section-title">DOCUMENT PREPARATION <a href="#top" class="up-button">⬆ UP</a></div>
+<div class="work-page">
+    <img src="WORK_5A.jpg" alt="Slide 1"><img src="WORK_5B.jpg" alt="Slide 2">
+</div>
+
+<div id="work6" class="work-section-title">MEETINGS AND WEBINARS <a href="#top" class="up-button">⬆ UP</a></div>
+<div class="work-page"><img src="WORK_6.png" alt="Zoom"></div>
+
+<div id="work7" class="work-section-title">OTHER WORK DONE <a href="#top" class="up-button">⬆ UP</a></div>
+
+<!-- VIDEO EMBEDS -->
+<div class="work-page">
+    <h3>DARK SENSOR</h3>
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/Kf6lfl4cOq4" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="work-page">
+    <h3>FM TRANSMITTER</h3>
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/EaAZj-avLN0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="work-page">
+    <h3>WEBSITE CREATION</h3>
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/-paV9Fn2NfE" frameborder="0" allowfullscreen></iframe>
+</div>
+
+</body>
+</html>
